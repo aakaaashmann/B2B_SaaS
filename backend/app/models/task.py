@@ -24,5 +24,5 @@ class Task(Base):
     org_id = Column(String, nullable=False, index=True)
     created_by = Column(String, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
