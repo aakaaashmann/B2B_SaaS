@@ -8,7 +8,7 @@ function Layout() {
         <div className={"nav"}>
             <div className={"nav-container"}>
                 <Link to={"/"} className={"nav-logo"}>
-                    TaskBoard
+                    SimpleTask
                 </Link>
 
                 <div className={"nav-links"}>

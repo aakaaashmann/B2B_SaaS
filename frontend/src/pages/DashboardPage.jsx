@@ -39,7 +39,7 @@ function DashboardPage() {
     if (!organization) {
         return <div className={"dashboard-container"}>
             <div className={"no-org-container"}>
-                <h1 className={"no-org-title"}>Welcome to TaskBoard</h1>
+                <h1 className={"no-org-title"}>Welcome to SimpleTask</h1>
                 <p className={"no-org-text"}>
                     Create or join an organization to start managing tasks with your team.
                 </p>
