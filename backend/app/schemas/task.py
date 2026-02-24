@@ -2,7 +2,7 @@ from datetime import datetime
 from pydantic import BaseModel
 from typing import Optional
 from app.models.task import TaskStatus
-
+from uuid import UUID
 # Define a Pydantic model for creating a new task
 class TaskCreate(BaseModel):
     title: str
@@ -22,7 +22,7 @@ class TaskStatusUpdate(BaseModel):
 
 # Define a Pydantic model for representing a task in responses
 class TaskResponse(BaseModel):
-    id: int
+    id: UUID
     title: str
     description: Optional[str] = None
     status: TaskStatus
